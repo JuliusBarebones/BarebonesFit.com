@@ -1,4 +1,4 @@
-# barebonesfit.com
+# Barebonesfit.com
 
 ## Introduction
 
