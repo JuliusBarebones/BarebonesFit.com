@@ -18,7 +18,17 @@
     </a>
   </header>
   <!-- Sections will go here -->
-  <section id="features">
+  <section id="home" class="hidden">
+    <div class="home-left">
+      <img src="https://i.ibb.co/VCKmGFK/Barebones-Logo-White.png" alt="Barebones logo" id="home-logo">
+      <p class="motto">Fitness without the Distraction</p>
+    </div>
+    <div class="home-right">
+      <img src="https://uploads-ssl.webflow.com/6352b43935e754b0270fcaef/6352bd30574620e425f01892_banner%20bk2.png" alt="Blurred background" class="blur-img">
+      <img src="https://i.ibb.co/6byFF7b/barebones.png" alt="iPhone" class="iphone-img">
+    </div>
+  </section>  
+  <section id="features" class="hidden">
     <h2>FEATURES</h2>
     <p>BAREBONES houses a blend of functionality with its Feed, Search, Upload, Notes, and Profile tabs, offering a seamless user experience. Each workout post comes with a customizable template, allowing users to copy, paste, sort, and save notes straight from posts.</p>
     <div class="card-container">
@@ -36,8 +46,37 @@
       </div>
     </div>
   </section>  
-  <section id="our-story">
-    <h2>Our Story</h2>
+  <br><br><br><br><br>
+  <section id="community" class="hidden">
+    <div class="community-left">
+      <img class="blur-img-community" src="https://uploads-ssl.webflow.com/6352b43935e754b0270fcaef/6352bd91776938e3a6c482aa_posts%20in%20secs%20bk.png" alt="blurred fitness image">
+      <img class="iphone-img-community" src="https://uploads-ssl.webflow.com/6352b43935e754b0270fcaef/6352bc877769381363c4752f_posts%20in%20seconds.png" alt="iphone">
+    </div>
+    <div class="community-right">
+      <h2 class="community-title">COMMUNITY</h2>
+      <p class="community-description">Barebones is offering a creator-centric subscription service that allows individuals to charge for premium content. Subscribers will have exclusive access to workouts, meal plans, Q/A, & more. Apply now and create your own community!</p>
+      <div class="mini-section">
+        <h3 class="mini-section-title">How it works</h3>
+        <ul class="mini-section-points">
+          <!-- Your bullet points go here -->
+          <li>Create a BAREBONES account.</li>
+          <li>Apply to become a BAREBONES athlete.</li>
+          <li>Submit your credentials.</li>
+          <li>Get verified.</li>
+        </ul>
+      </div>
+      <div class="mini-section">
+        <h3 class="mini-section-title">The Details</h3>
+        <ul class="mini-section-points">
+          <li>Once you are verified, you will receive a designated icon to showcase your community status.</li>
+          <li>You can build out a subscribable interface to engage with your followers.</li>
+          <ul><li>The subscription fee and information are entirely up to the discretion of content creator.</li></ul>
+        </ul>
+      </div>
+    </div>
+  </section>  
+  <section id="our-story" class="hidden">
+    <h2>OUR STORY</h2>
     <p>BAREBONES was born out of a passion for fitness and a vision to connect individuals on their health journeys. We saw a gap in the fitness market for an interactive platform that combines the power of social media with the practicality of a fitness app. Our aim was to build a community that promotes shared learning, growth, and a love for fitness.</p>
     <div id="story-images">
       <div class="story">
@@ -47,7 +86,7 @@
           <p class="description">Description of Chloe Gaynor</p>
         </div>
       </div>
-      <div class="story">
+      <div class="story" >
         <img src="https://i.ibb.co/KwyGS4x/396f3c13-6ea8-4f2d-9ff1-22bc28ef3c2f.jpg" alt="Erika Ramirez">
         <div class="overlay">
           <h3>Erika Ramirez</h3>
@@ -71,21 +110,28 @@
     </div>
   </section>
   <footer>
-    <div id="footer-left">
-      <img id="footer-icon" src="icon.png" alt="icon">
-      <a href="contact.html">Contact Us</a>
-      <a href="terms.html">Terms and Conditions</a>
-      <a href="privacy.html">Privacy Policy</a>
+    <div id="footer-content">
+      <div id="footer-left">
+        <img id="footer-icon" src="https://i.ibb.co/fDnwBFK/Copy-of-B-Logo-Black.png" alt="icon">
+        <a href="contact.html">Contact Us</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div id="footer-right">
+        <h2>Be the First to Know</h2>
+        <input type="email" id="email-input" placeholder="Enter your email">
+        <button id="submit-btn">Submit</button>
+        <p id="hashtag">#BUILTBYBAREBONES</p>
+        <div id="social-media-links">
+          <a href="https://www.tiktok.com/@barebonesfitness_"><img class="social-media-icon" src="https://freelogopng.com/images/all_img/1655890402white-tiktok-logo-png.png" alt="TikTok"></a>
+          <a href="https://www.linkedin.com/company/barebones-fitness/"><img class="social-media-icon" src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/barebonesfitness_/"><img class="social-media-icon" src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" alt="Instagram"></a>
+        </div>
+      </div>
     </div>
-    <div id="footer-right">
-      <h2>Be the First to Know</h2>
-      <input type="email" id="email-input" placeholder="Enter your email">
-      <button id="submit-btn">Submit</button>
-      <p id="hashtag">#BUILTBYBAREBONES</p>
-      <a href="#"><img src="instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="tiktok.png" alt="TikTok"></a>
-      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    <div id="footer-bottom">
+      <p id="copyright">©2023 Barebones Fitness, Inc. All Rights Reserved.</p>
     </div>
-  </footer>
+  </footer>  
 </body>
 </html>
