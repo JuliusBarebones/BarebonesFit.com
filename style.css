@@ -1,3 +1,5 @@
+/* add a fallback font so that the puncutation and symbols dont look weird */
+
 @font-face {
   font-family: 'Barebones-Reg';
   src: url('Shape-Regular.otf') format('opentype');
@@ -60,7 +62,7 @@ section {
 
 #navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 50%;
 }
 
@@ -201,34 +203,95 @@ footer {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  min-height: 100vh; /* Set the minimum height to the full viewport height */
 }
+
 
 #footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  max-width: 1200px; /* Set a maximum width to create space on larger screens */
-  width: 100%; /* Use the full available width on smaller screens */
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
-#footer-left, #footer-right {
+#footer-left,
+#footer-right {
+  flex-basis: 45%;
+}
+
+#footer-left {
+  display: flex;
+  align-items: center;
+}
+
+#footer-right {
   display: flex;
   flex-direction: column;
-  width: 40%; /* Adjust width as needed */
+  align-items: center;
 }
 
 #footer-icon {
   width: 50px;
-  margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 #footer-left a {
   color: white;
   text-decoration: none;
-  margin: 5px 0;
+  margin: 5px;
 }
+
+#footer-right h2 {
+  font-size: 2em;
+  color: white;
+  font-family: 'Barebones-Bold';
+  margin-bottom: 10px;
+}
+
+#email-input {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  margin: 10px 0;
+}
+
+#submit-btn {
+  background-color: purple;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit-btn:hover {
+  background-color: lightpurple;
+}
+
+#hashtag {
+  margin: 10px 0;
+}
+
+#social-media-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icon {
+  height: 15px;
+  width: auto;
+}
+
+#footer-bottom {
+  text-align: center;
+  width: 100%;
+} 
 
 #email-input {
   border: none;
@@ -292,7 +355,7 @@ footer {
 }
 
 #our-story p, #features p {
-  font-size: 1.5em;
+  font-size: 1em;
   color: grey;
   margin-bottom: 20px;
   font-family: 'Barebones-Med';
