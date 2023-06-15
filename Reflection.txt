@@ -1,0 +1,13 @@
+Reflection for Web Project 
+
+This was a very simple yet taxing project. I haven't been very familiar with modifying code that pre-exists since most of my projects have been solo projects. However, I really enjoyed this assignment. It was a lot of fun debugging and testing code as I rewrote and made changes. It did take a lot of time but I was able to do it. The changes I made were as follows. 
+
+1. I centrally aligned the navbar options instead of between the two icons 
+2. The iPhone that didn't appear until the page was clicked or scrolled has been fixed to be there from the beginning 
+3. I made the fonts smaller for the text in the features boxes since they were larger than the titles. 
+4. I proposed adding a fallback font to the style.css file since the custom font didn't handle punctuation and symbols well in some places. 
+5. I made the footer row aligned instead of column aligned. It's not perfect but it is a start. 
+
+Most of the time I spent was on understanding what change to what code made a difference where. There were so many lines that at times to get the original code back I had to copy the code off of GitHub again. Once I got the hang of things and started understanding what code affected what region how it was easier. Most of my time was spent fixing the footer since that had so many components in both files that I had to keep changing things back and forth in both files. Apart from that I mainly made my changes in the style.css file. 
+
+This assignment taught me how to collaborate on code rather than making it yourself. Usually I made the code myself and other people did what I did to this code. Now I understand modifying is just as hard and now that I have a hang of it I would like to do more. It was a lot of fun. 
