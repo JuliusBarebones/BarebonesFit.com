@@ -273,6 +273,16 @@ footer {
   gap: 10px;
 }
 
+.links-container{
+  display:flex;
+  flex-direction: column;
+}
+
+/*margin useful to fix the navigation of header to different sections*/
+#featuresMarg,#storyMarg,#communityMarg{
+  margin:5%
+}
+
 .social-media-icon {
   height: 15px; /* Adjust as necessary */
   width: auto;
