@@ -203,55 +203,43 @@ section {
   margin-left: 20px;
 }
 
+/* Changed footer width to 100%*/
 footer {
   color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100%;
 }
 
+/* Changed max-width to make it responsive  */
 #footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* aligns the start of the left and right footers */
-  max-width: 1200px; /* Set a maximum width to create space on larger screens */
+  align-items: start;
+  max-width: 100%; /* Set a maximum width to create space on larger screens */
   width: 100%; /* Use the full available width on smaller screens */
   margin-bottom: 20px;
 }
 
-#footer-left {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%; /* Adjust width as needed */
-  margin-right: 50px;
-}
-
-#footer-right {
+/* Adding padding to make it look better  */
+#footer-left, #footer-right {
   display: flex;
   flex-direction: column;
   width: 40%; /* Adjust width as needed */
-  margin-left: 420px;
+  padding:100px
 }
 
 #footer-icon {
   width: 50px;
+  margin-bottom: 20px;
 }
 
 #footer-left a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
-}
-
-.logo-container {
-  margin-bottom: 500px; /* Add space between the logo and the links */
-}
-
-.links-container {
-  display: flex;
-  flex-direction: row;
+  margin: 5px 0;
 }
 
 #email-input {
@@ -263,8 +251,8 @@ footer {
 }
 
 #submit-btn {
-  background-color: #cf04fe;
-  color: white;
+  background-color: purple;
+  color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -273,7 +261,7 @@ footer {
 }
 
 #submit-btn:hover {
-  background-color: black; /* Adjust this to the color you prefer */
+  background-color: lightpurple; /* Adjust this to the color you prefer */
 }
 
 #hashtag {
@@ -298,6 +286,7 @@ footer {
 #copyright {
   font-size: 0.8em;
 }
+
 
 /* existing code */
 #our-story {
