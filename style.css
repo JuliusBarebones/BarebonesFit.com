@@ -109,7 +109,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 55%;
-  background-color: red;
+  
 }
 
 #home-logo {
@@ -369,8 +369,8 @@ footer {
 /* updated code */
 .story {
   position: relative;
-  width: 250px; /* adjust the size as needed */
-  height: 250px; /* adjust the size as needed */
+  width: 280px; /* adjust the size as needed */
+  height: 280px; /* adjust the size as needed */
   margin: 0.5%;
   display: flex;
   flex-direction: column;
