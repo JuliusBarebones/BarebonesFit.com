@@ -411,6 +411,7 @@ footer {
   color: white;
   text-align: center;
   width: 100%;
+  background-color: gray;
 }
 
 /* existing code for .card and related styles */
