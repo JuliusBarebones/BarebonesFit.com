@@ -54,31 +54,35 @@ section {
 }
 
 #logo {
-  height: 70px;
+  height: 50px;
   width: auto;
 }
 
 #navbar {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 65%;
+  font-family: 'Barebones-Bold';
+  
 }
 
 #navbar a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 27px;
 }
 
 #navbar a:hover {
-  color: purple;
+  color: #cf04fe;
 }
 
 #launch-btn {
   background-color: transparent;
-  border: 2px solid black;
-  border-radius: 50px;
+  border: 2px solid #cf04fe;
+  border-radius: 60px;
   padding: 10px 20px;
+  font-family: 'Barebones-Bold';
+  color: #cf04fe;
 }
 
 #home {
@@ -88,15 +92,24 @@ section {
   padding: 20px;
   color: white;
   width: 80%;
+  margin-top: 50px; /* adjust this value to increase/decrease space */
 }
 
-.home-left, .home-right {
+.home-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 40%;
+  width: 30%;
 }
+.home-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;  
+}
+
 
 #home-logo {
   width: 80%;
@@ -105,9 +118,13 @@ section {
 
 .motto {
   font-family: 'Barebones-Bold';
-  font-size: 2em;
-  text-align: center;
+  font-size: 3vw; /* modified from em to vw so that the motto changes size with the screen size */
+  text-align: left;
+  margin-top: 300px; /* adjust this value to move the motto up or down */
+  white-space: nowrap;
+  overflow: hidden;
 }
+
 
 .blur-img {
   position: relative; /* Make this a relative parent */
@@ -120,13 +137,12 @@ section {
 
 .iphone-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(30%, -30%);
-  width: 35%; /* Adjust to the size you prefer */
+  top: 20%;
+  width: 25%; /* Adjust to the size you prefer */
   height: auto;
   object-fit: contain;
 }
+
 
 #community {
   display: flex;
@@ -135,6 +151,7 @@ section {
   padding: 20px;
   color: white;
   width: 80%;
+  margin-top: 150px;
 }
 
 .community-left, .community-right {
@@ -201,34 +218,42 @@ footer {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
 }
 
 #footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  max-width: 1200px; /* Set a maximum width to create space on larger screens */
-  width: 100%; /* Use the full available width on smaller screens */
-  margin-bottom: 20px;
-}
-
-#footer-left, #footer-right {
-  display: flex;
   flex-direction: column;
-  width: 40%; /* Adjust width as needed */
-}
-
-#footer-icon {
-  width: 50px;
+  align-items: center; /* Center the content vertically */
+  max-width: 1200px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
-#footer-left a {
+.logo-container {
+  margin-bottom: 50px; /* Add space between the logo and the links */
+}
+
+.logo-container img {
+  width: 150px; /* Adjust to the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+.links-container a {
   color: white;
   text-decoration: none;
-  margin: 5px 0;
+  font-weight: bold;
+  margin: 0 10px; /* Add spacing between the buttons */
 }
+
 
 #email-input {
   border: none;
@@ -239,8 +264,8 @@ footer {
 }
 
 #submit-btn {
-  background-color: purple;
-  color: black;
+  background-color: #cf04fe;
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -249,7 +274,7 @@ footer {
 }
 
 #submit-btn:hover {
-  background-color: lightpurple; /* Adjust this to the color you prefer */
+  background-color: black; /* Adjust this to the color you prefer */
 }
 
 #hashtag {
@@ -259,6 +284,7 @@ footer {
 #social-media-links {
   display: flex;
   gap: 10px;
+  justify-content: center; /* Center the content horizontally */
 }
 
 .social-media-icon {
@@ -267,31 +293,32 @@ footer {
 }
 
 #footer-bottom {
-  text-align: center;
+  text-align: center; /* Center the text horizontally */
   width: 100%;
 }
 
-#copyright {
-  font-size: 0.8em;
+#footer-bottom p {
+  margin: 0; /* Remove any default margin on the paragraph */
 }
 
 
-
-#our-story, #features {
+/* existing code */
+#our-story {
   color: white;
   padding: 20px;
   text-align: left;
   max-width: 70%;
   margin: auto;
+  margin-bottom: 300px;
 }
 
 #our-story h2, #features h2 {
-  font-size: 3em;
+  font-size: 2.8em;
   color: white;
   font-family: 'Barebones-Bold';
 }
 
-#our-story p, #features p {
+#our-story p{
   font-size: 1.5em;
   color: grey;
   margin-bottom: 20px;
@@ -304,33 +331,23 @@ footer {
   flex-wrap: wrap;
 }
 
-.story, .card {
+/* updated code */
+.story {
   position: relative;
-  width: 30%;
+  width: 250px; /* adjust the size as needed */
+  height: 250px; /* adjust the size as needed */
   margin: 0.5%;
-  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.card {
-  background: white;
-  color: black;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.story img, .card img {
-  width: 100%;
-  height: 100%;
+.story img {
   object-fit: cover;
-}
-
-.name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .overlay {
@@ -353,8 +370,65 @@ footer {
   opacity: 1;
 }
 
-.story:hover .name {
-  visibility: hidden;
+.story h3 {
+  position: absolute;
+  bottom: 10px; /* adjust as needed */
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+
+#features {
+  color: white;
+  padding: 20px;
+  text-align: left;
+  max-width: 70%;
+  margin: auto;
+}
+
+.features-description {
+  font-size: 1.5em;
+  font-family: 'Barebones-Med';
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.features-card-description {
+  font-size: 1.1em;
+  color: grey;
+
+  font-family: 'Barebones-Med';
+}
+
+#features h3 {
+  font-size: 1.4em;
+  color: black;
+  margin-bottom: 20px;
+  font-family: 'Barebones-Med';
+}
+
+
+/* existing code for .card and related styles */
+.card {
+  position: relative;
+  background: white;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0.5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Responsive layout - makes the menu and the content stack on top of each other */
@@ -391,3 +465,4 @@ footer {
     margin: 5% auto;
   }
 }
+
