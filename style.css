@@ -469,7 +469,8 @@ footer {
     
   }
   label{
-    display:flex
+    display: block;
+    text-align:center;
   }
 
 
@@ -484,13 +485,20 @@ footer {
   }
   #navbar {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  label:hover{
+    background-color: blue;
   }
 
   #menu-bar:checked ~ .testClass{
     display:flex;
-    
+    align-items: center ;
+    background-color: #cf04fe;
   }
+  
 
 
 
