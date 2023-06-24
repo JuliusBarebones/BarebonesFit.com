@@ -8,19 +8,21 @@
   <header id="header">
     <img id="logo" src="https://i.ibb.co/5FdjzXs/Barebones-Logo-Black-2.png" alt="logo">
     <nav id="navbar">
-      <a href="#home">HOME</a>
-      <a href="#featuresMarg">FEATURES</a>
-      <a href="#communityMarg">COMMUNITY</a>
-      <a href="#storyMarg">OUR STORY</a>
+      <a href="#home" class="largeScreen">HOME</a>
+      <a href="#featuresMarg" class="largeScreen">FEATURES</a>
+      <a href="#communityMarg" class="largeScreen">COMMUNITY</a>
+      <a href="#storyMarg" class="largeScreen">OUR STORY</a>
        <!-- List for the dropdown menu -->
        <input type="checkbox" id="menu-bar">
        <label for="menu-bar">Menu</label>
+       <!-- Small screen and largeScreen classes used to differentiate and show what appears when -->
       <ul class="testClass">
-        <li>Home</li>
-        <li>Features</li>
-        <li>Community</li>
-        <li>Our Story</li>
+        <li><a href="#home" class="smallScreen">HOME</a></li>
+        <li><a href="#featuresMarg" class="smallScreen">FEATURES</a></li>
+        <li><a href="#communityMarg" class="smallScreen">COMMUNITY</a></li>
+        <li><a href="#storyMarg" class="smallScreen">OUR STORY</a></li>
       </ul>
+      <!-- End Here -->
     </nav>
     <a href="https://apps.apple.com/us/app/barebones-fitness/id1629365723">
       <button id="launch-btn">Download Now</button>

@@ -21,14 +21,13 @@
   font-size: 25px;
   display:none
   
+  
 }
 label{
   color: black;
   text-decoration: none;
   font-size: 25px;
   display:none
- 
-  
 }
 
 #menu-bar{
@@ -89,15 +88,22 @@ section {
   
 }
 
-#navbar a {
+.largeScreen {
   color: black;
   text-decoration: none;
   font-size: 25px;
   margin: 2%
 }
 
-#navbar a:hover {
+.largeScreen:hover {
   color: #cf04fe;
+}
+
+.smallScreen{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
 }
 
 #launch-btn {
@@ -132,8 +138,6 @@ section {
   align-items: flex-start;
   justify-content: center;
   width: 55%;
-  background-color: red;
-
   
 }
 
@@ -477,11 +481,8 @@ footer {
   #logo {
     margin-bottom: 5px;
   }
-  #navbar a{
+   .largeScreen{
     display: none;
-  }
-  #logo:hover  {
-   background-color:red;
   }
   #navbar {
     width: 100%;
@@ -489,18 +490,16 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  label:hover{
-    background-color: blue;
-  }
 
   #menu-bar:checked ~ .testClass{
     display:flex;
-    align-items: center ;
-    background-color: #cf04fe;
+    align-items:center;
   }
+  .smallScreen:hover{
+    background-color: rgb(180, 180, 180);
+  }
+
   
-
-
 
   #launch-btn {
     margin-top: 10px;
@@ -518,5 +517,10 @@ footer {
   .story, .card {
     width: 90%;
     margin: 5% auto;
+  }
+  .story {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
   }
 }
