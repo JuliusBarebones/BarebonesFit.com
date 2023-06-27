@@ -63,7 +63,6 @@ section {
   justify-content: space-around;
   width: 65%;
   font-family: 'Barebones-Bold';
-  
 }
 
 #navbar a {
@@ -102,14 +101,14 @@ section {
   justify-content: center;
   width: 30%;
 }
-.home-left{
+
+.home-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 70%;  
+  width: 70%;
 }
-
 
 #home-logo {
   width: 80%;
@@ -124,7 +123,6 @@ section {
   white-space: nowrap;
   overflow: hidden;
 }
-
 
 .blur-img {
   position: relative; /* Make this a relative parent */
@@ -143,7 +141,6 @@ section {
   object-fit: contain;
 }
 
-
 #community {
   display: flex;
   justify-content: space-between;
@@ -154,7 +151,8 @@ section {
   margin-top: 150px;
 }
 
-.community-left, .community-right {
+.community-left,
+.community-right {
   width: 45%;
 }
 
@@ -240,7 +238,6 @@ footer {
   height: auto; /* Maintain aspect ratio */
 }
 
-
 .links-container {
   display: flex;
   flex-direction: row;
@@ -253,7 +250,6 @@ footer {
   font-weight: bold;
   margin: 0 10px; /* Add spacing between the buttons */
 }
-
 
 #email-input {
   border: none;
@@ -301,33 +297,34 @@ footer {
   margin: 0; /* Remove any default margin on the paragraph */
 }
 
-
 /* existing code */
 #our-story {
   color: white;
   padding: 20px;
-  text-align: left;
+  text-align: center; /* Change the alignment to center */
   max-width: 70%;
   margin: auto;
   margin-bottom: 300px;
 }
 
-#our-story h2, #features h2 {
+#our-story h2,
+#features h2 {
   font-size: 2.8em;
   color: white;
   font-family: 'Barebones-Bold';
 }
 
-#our-story p{
+#our-story p {
   font-size: 1.5em;
   color: grey;
   margin-bottom: 20px;
   font-family: 'Barebones-Med';
 }
 
-#story-images, .card-container {
+#story-images,
+.card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly; /* Change to space-evenly for even alignment */
   flex-wrap: wrap;
 }
 
@@ -378,7 +375,6 @@ footer {
   width: 100%;
 }
 
-
 #features {
   color: white;
   padding: 20px;
@@ -397,7 +393,6 @@ footer {
 .features-card-description {
   font-size: 1.1em;
   color: grey;
-
   font-family: 'Barebones-Med';
 }
 
@@ -407,7 +402,6 @@ footer {
   margin-bottom: 20px;
   font-family: 'Barebones-Med';
 }
-
 
 /* existing code for .card and related styles */
 .card {
@@ -451,18 +445,92 @@ footer {
     margin-top: 10px;
   }
 
-  #our-story, #features {
-    max-width: 100%;
+  #home {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
   }
 
-  #story-images, .card-container {
+  .home-right,
+  .home-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #home-logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .motto {
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  .blur-img {
+    width: 100%;
+    transform: translate(0%, 0%);
+  }
+
+  .iphone-img {
+    width: 50%;
+  }
+
+  #community {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+
+  .community-left,
+  .community-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .iphone-img-community {
+    width: 70%;
+  }
+
+  #our-story {
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+
+  #our-story h2,
+  #features h2 {
+    font-size: 2.5em;
+  }
+
+  #our-story p,
+  .features-description {
+    font-size: 1.2em;
+  }
+
+  #story-images,
+  .card-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .story, .card {
-    width: 90%;
-    margin: 5% auto;
+  .story {
+    width: 80%;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .story h3 {
+    font-size: 1.2em;
+  }
+
+  #features {
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px 0;
+    padding-bottom: 10%;
   }
 }
-
