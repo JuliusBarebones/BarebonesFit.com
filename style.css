@@ -492,10 +492,13 @@ footer {
 
   #menu-bar:checked ~ .testClass{
     display:flex;
-    align-items:center;
+    align-items:left;
+    text-align:center;
+    margin-right: 5%;
   }
-  .smallScreen:hover{
-    background-color: rgb(180, 180, 180);
+  .testClass li:hover{
+    background-color: rgb(180,180,180);
+    border-radius: 2%;
   }
 
   
