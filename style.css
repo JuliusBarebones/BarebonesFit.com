@@ -351,7 +351,7 @@ footer {
   color: white;
   padding: 20px;
   text-align: left;
-  max-width: 70%;
+  max-width: 95%;
   margin: auto;
 }
 
@@ -406,7 +406,7 @@ footer {
   flex-direction: column;
   align-items: center;
   border-radius: 50%;
-  overflow: hidden;
+  overflow:hidden
 }
 
 .story img {
@@ -429,6 +429,12 @@ footer {
   width: 100%;
   background-color: gray;
 }
+.CSuiteTitles{
+  text-align: center;
+  align-items: center;
+  background-color: red;
+}
+
 
 /* existing code for .card and related styles */
 .card {
