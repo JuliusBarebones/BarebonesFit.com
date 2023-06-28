@@ -119,9 +119,9 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   color: white;
-  width: 80%;
+  width: 95%;
   margin-top: 50px; /* adjust this value to increase/decrease space */
 }
 
@@ -131,6 +131,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 40%;
+  
 }
 .home-left{
   display: flex;
@@ -148,14 +149,14 @@ section {
 
 .motto {
   font-family: 'Barebones-Bold';
-  font-size: 2.0em;
+  font-size: 2.5em;
   text-align: left;
   margin-top: 300px; /* adjust this value to move the motto up or down */
 }
 
 .blur-img {
   position: relative; /* Make this a relative parent */
-  width: 110%; /* Increase width */
+  width: 90%; /* Increase width */
   height: auto;
   object-fit: contain;
   filter: blur(8px);
@@ -165,9 +166,9 @@ section {
 .iphone-img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(30%, -30%);
-  width: 35%; /* Adjust to the size you prefer */
+  width: 30%; /* Adjust to the size you prefer */
   height: auto;
   object-fit: contain;
 }
