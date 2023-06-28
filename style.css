@@ -376,14 +376,14 @@ footer {
 
 .features-card-description {
   font-size: 1.1em;
-  color: grey;
+  color: black;
 
   font-family: 'Barebones-Med';
 }
 
 #features h3 {
   font-size: 1.4em;
-  color: black;
+  color: #cf04fe;
   margin-bottom: 20px;
   font-family: 'Barebones-Med';
 }
