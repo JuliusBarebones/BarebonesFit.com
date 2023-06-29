@@ -12,6 +12,28 @@
   font-family: 'Barebones-Med';
   src: url('Shape-Medium.otf') format('opentype');
 }
+/* Styling to make list not appear initially*/
+.testClass{
+  list-style-type:none;
+  flex-direction:column;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  display:none
+  
+  
+}
+label{
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  display:none
+}
+
+#menu-bar{
+  display:none
+}
+
 
 body {
   background-color: black;
@@ -66,14 +88,22 @@ section {
   
 }
 
-#navbar a {
+.largeScreen {
   color: black;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 25px;
+  margin: 2%
 }
 
-#navbar a:hover {
+.largeScreen:hover {
   color: #cf04fe;
+}
+
+.smallScreen{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
 }
 
 #launch-btn {
@@ -89,18 +119,27 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   color: white;
-  width: 80%;
+  width: 95%;
   margin-top: 50px; /* adjust this value to increase/decrease space */
 }
 
-.home-left, .home-right {
+.home-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 40%;
+  
+}
+.home-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 55%;
+  
 }
 
 #home-logo {
@@ -110,14 +149,14 @@ section {
 
 .motto {
   font-family: 'Barebones-Bold';
-  font-size: 2.1em;
+  font-size: 2.5em;
   text-align: left;
   margin-top: 300px; /* adjust this value to move the motto up or down */
 }
 
 .blur-img {
   position: relative; /* Make this a relative parent */
-  width: 110%; /* Increase width */
+  width: 90%; /* Increase width */
   height: auto;
   object-fit: contain;
   filter: blur(8px);
@@ -127,9 +166,9 @@ section {
 .iphone-img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(30%, -30%);
-  width: 35%; /* Adjust to the size you prefer */
+  width: 30%; /* Adjust to the size you prefer */
   height: auto;
   object-fit: contain;
 }
@@ -203,55 +242,43 @@ section {
   margin-left: 20px;
 }
 
+/* Changed footer width to 100%*/
 footer {
   color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100%;
 }
 
+/* Changed max-width to make it responsive  */
 #footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* aligns the start of the left and right footers */
-  max-width: 1200px; /* Set a maximum width to create space on larger screens */
+  align-items: start;
+  max-width: 100%; /* Set a maximum width to create space on larger screens */
   width: 100%; /* Use the full available width on smaller screens */
   margin-bottom: 20px;
 }
 
-#footer-left {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%; /* Adjust width as needed */
-  margin-right: 50px;
-}
-
-#footer-right {
+/* Adding padding to make it look better  */
+#footer-left, #footer-right {
   display: flex;
   flex-direction: column;
   width: 40%; /* Adjust width as needed */
-  margin-left: 420px;
+  padding:100px
 }
 
 #footer-icon {
   width: 50px;
+  margin-bottom: 20px;
 }
 
 #footer-left a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
-}
-
-.logo-container {
-  margin-bottom: 500px; /* Add space between the logo and the links */
-}
-
-.links-container {
-  display: flex;
-  flex-direction: row;
+  margin: 5px 0;
 }
 
 #email-input {
@@ -264,7 +291,7 @@ footer {
 
 #submit-btn {
   background-color: #cf04fe;
-  color: white;
+  color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -273,7 +300,7 @@ footer {
 }
 
 #submit-btn:hover {
-  background-color: black; /* Adjust this to the color you prefer */
+  background-color: #cf04fe; /* Adjust this to the color you prefer */
 }
 
 #hashtag {
@@ -283,6 +310,16 @@ footer {
 #social-media-links {
   display: flex;
   gap: 10px;
+}
+
+.links-container{
+  display:flex;
+  flex-direction: column;
+}
+
+/*margin useful to fix the navigation of header to different sections*/
+#featuresMarg,#storyMarg,#communityMarg{
+  margin:5%
 }
 
 .social-media-icon {
@@ -299,6 +336,7 @@ footer {
   font-size: 0.8em;
 }
 
+
 /* existing code */
 #our-story {
   color: white;
@@ -313,7 +351,7 @@ footer {
   color: white;
   padding: 20px;
   text-align: left;
-  max-width: 70%;
+  max-width: 95%;
   margin: auto;
 }
 
@@ -333,20 +371,20 @@ footer {
 .features-description {
   font-size: 1.5em;
   font-family: 'Barebones-Med';
-  color: grey;
+  color: white;
   margin-bottom: 20px;
 }
 
 .features-card-description {
   font-size: 1.1em;
-  color: grey;
+  color: black;
 
   font-family: 'Barebones-Med';
 }
 
 #features h3 {
   font-size: 1.4em;
-  color: black;
+  color: #cf04fe;
   margin-bottom: 20px;
   font-family: 'Barebones-Med';
 }
@@ -361,14 +399,14 @@ footer {
 /* updated code */
 .story {
   position: relative;
-  width: 250px; /* adjust the size as needed */
-  height: 250px; /* adjust the size as needed */
-  margin: 0.5%;
+  width: 225px; /* adjust the size as needed */
+  height: 225px; /* adjust the size as needed */
+  margin: .5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 50%;
-  overflow: hidden;
+  overflow:hidden
 }
 
 .story img {
@@ -377,21 +415,7 @@ footer {
   min-height: 100%;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+
 
 .story:hover .overlay {
   opacity: 1;
@@ -403,7 +427,22 @@ footer {
   color: white;
   text-align: center;
   width: 100%;
+  background-color: gray;
 }
+.CSuiteTitles h4{
+  text-align: center;
+  align-items: center;
+  color:white;
+  
+  margin-top: -20px;
+}
+.CSuiteTitles h3{
+  text-align: center;
+  align-items: center;
+  color:#cf04fe;
+  
+}
+
 
 /* existing code for .card and related styles */
 .card {
@@ -426,22 +465,44 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-
 /* Responsive layout - makes the menu and the content stack on top of each other */
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
   #header {
     flex-direction: column;
     height: auto;
+    
   }
+  label{
+    display: block;
+    text-align:center;
+  }
+
 
   #logo {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
-
+   .largeScreen{
+    display: none;
+  }
   #navbar {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
+
+  #menu-bar:checked ~ .testClass{
+    display:flex;
+    align-items:left;
+    text-align:center;
+    margin-right: 5%;
+  }
+  .testClass li:hover{
+    background-color: rgb(180,180,180);
+    border-radius: 2%;
+  }
+
+  
 
   #launch-btn {
     margin-top: 10px;
@@ -459,5 +520,10 @@ footer {
   .story, .card {
     width: 90%;
     margin: 5% auto;
+  }
+  .story {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
   }
 }

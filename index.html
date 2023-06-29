@@ -8,10 +8,21 @@
   <header id="header">
     <img id="logo" src="https://i.ibb.co/5FdjzXs/Barebones-Logo-Black-2.png" alt="logo">
     <nav id="navbar">
-      <a href="#home">HOME</a>
-      <a href="#features">FEATURES</a>
-      <a href="#community">COMMUNITY</a>
-      <a href="#our-story">OUR STORY</a>
+      <a href="#home" class="largeScreen">HOME</a>
+      <a href="#featuresMarg" class="largeScreen">FEATURES</a>
+      <a href="#communityMarg" class="largeScreen">COMMUNITY</a>
+      <a href="#storyMarg" class="largeScreen">OUR STORY</a>
+       <!-- List for the dropdown menu -->
+       <input type="checkbox" id="menu-bar">
+       <label for="menu-bar">Menu</label>
+       <!-- Small screen and largeScreen classes used to differentiate and show what appears when -->
+      <ul class="testClass">
+        <li><a href="#home" class="smallScreen">HOME</a></li>
+        <li><a href="#featuresMarg" class="smallScreen">FEATURES</a></li>
+        <li><a href="#communityMarg" class="smallScreen">COMMUNITY</a></li>
+        <li><a href="#storyMarg" class="smallScreen">OUR STORY</a></li>
+      </ul>
+      <!-- End Here -->
     </nav>
     <a href="https://apps.apple.com/us/app/barebones-fitness/id1629365723">
       <button id="launch-btn">Download Now</button>
@@ -27,13 +38,14 @@
       <img src="https://i.ibb.co/6byFF7b/barebones.png" alt="iPhone" class="iphone-img">
     </div>
   </section>  
+  <section id="featuresMarg"></section>
   <section id="features" class="hidden">
-    <h2>FEATURES</h2>
+    <h2>Features</h2>
     <p class="features-description">Barebones houses a blend of functionality and seamless user experience.  Allowing users to share their workouts, connect with others, and build their own fitness community. Content is easily customizable and allows users to categorize and save workouts directly to their phone and save for later.</p>
     <div class="card-container">
       <div class="card">
         <h3>All-In-One Fitness Social Media App</h3>
-        <p class="features-card-description">Barebones incorporates the world of fitness with the interactivity of social media, creating an all-encompassing space for fitness enthusiasts and certified trainers alike. Connect, share, and grow together in your fitness journey with BAREBONES.</p>
+        <p class="features-card-description">Barebones incorporates the world of fitness with the interactivity of social media, creating an all-encompassing space for fitness enthusiasts and certified trainers alike. Connect, share, and grow together in your fitness journey with Barebones.</p>
       </div>
       <div class="card">
         <h3>Customize Your Workouts</h3>
@@ -45,6 +57,7 @@
       </div>
     </div>
   </section>  
+  <section id="communityMarg"></section>
   <section id="community" class="hidden">
     <div class="community-left">
       <img class="blur-img-community" src="https://uploads-ssl.webflow.com/6352b43935e754b0270fcaef/6352bd91776938e3a6c482aa_posts%20in%20secs%20bk.png" alt="blurred fitness image">
@@ -66,45 +79,66 @@
       <div class="mini-section">
         <h3 class="mini-section-title">The details</h3>
         <ul class="mini-section-points">
-          <li>Once you are verified, you will receive a designated icon to showcase your community status.</li>
-          <li>You can build out a subscribable interface to engage with your followers.</li>
-          <li>Subscription fees are entirely up to the discretion of content creator.</li>
+          <li>Once verified, you will receive a designated icon to showcase your community status</li>
+          <li>You can build out a subscribable interface to engage with your followers</li>
+          <li>Subscription fees are entirely up to the discretion of content creator</li>
         </ul>
       </div>
     </div>
   </section>  
+  <section id="storyMarg"></section>
   <section id="our-story" class="hidden">
     <h2>OUR STORY</h2>
     <p>Barebones was born out of a passion for fitness and a vision to connect individuals on their health journeys. We saw a gap in the fitness market for an interactive platform that combines the power of social media with the practicality of a fitness app. Our aim was to build a community that promotes shared learning, growth, and a love for fitness.</p>
     <div id="story-images">
-      <div class="story">
-        <img src="https://i.ibb.co/Z1KCrcD/51124715-c424-4eb0-997e-4316b97f8482.jpg" alt="Chloe Gaynor">
-        <div class="overlay">
-          <p class="description">Description of Chloe Gaynor</p>
+      <div class="CSuite">
+        <div class="story">
+          <img src="https://i.ibb.co/Z1KCrcD/51124715-c424-4eb0-997e-4316b97f8482.jpg" alt="Chloe Gaynor">
+          <div class="overlay">
+            <p class="description">Description of Chloe Gaynor</p>
+          </div>
         </div>
-        <h3>Chloe Gaynor</h3>
-      </div>
-      <div class="story" >
-        <img src="https://i.ibb.co/KwyGS4x/396f3c13-6ea8-4f2d-9ff1-22bc28ef3c2f.jpg" alt="Erika Ramirez">
-        <div class="overlay">
-          <p class="description">Description of Erika Ramirez</p>
+        <div class="CSuiteTitles">
+          <h3>Chloe Gaynor</h3>
+          <h4>Founder and CEO</h4>
         </div>
-        <h3>Erika Ramirez</h3>
       </div>
-      <div class="story">
-        <img src="https://i.ibb.co/1dsLwFs/0045a00d-b160-4c1d-8610-bb9cf7e087e9.jpg" alt="Grace Hali">
-        <div class="overlay">
-          <p class="description">Description of Grace Hali</p>
+      <div class="CSuite">
+        <div class="story" >
+          <img src="https://i.ibb.co/KwyGS4x/396f3c13-6ea8-4f2d-9ff1-22bc28ef3c2f.jpg" alt="Erika Ramirez">
+          <div class="overlay">
+            <p class="description">Description of Erika Ramirez</p>
+          </div>
         </div>
-        <h3>Grace Hali</h3>
+        <div class="CSuiteTitles">
+          <h3>Erika Ramirez</h3>
+          <h4>Co-founder and CMO</h4>
+        </div>
       </div>
+      <div class="CSuite">
+        <div class="story">
+          <img src="https://i.ibb.co/1dsLwFs/0045a00d-b160-4c1d-8610-bb9cf7e087e9.jpg" alt="Grace Hali">
+          <div class="overlay">
+            <p class="description">Description of Grace Hali</p>
+          </div>
+        </div>
+        <div class="CSuiteTitles">
+          <h3>Grace Hali</h3>
+          <h4>Co-founder and COO</h4>
+        </div>
+      </div>
+      <div class="CSuite">
       <div class="story">
         <img src="https://i.ibb.co/6vKr58r/386e14f2-920f-4b3e-a6a4-a482af450bf0.jpg" alt="Julius Washington">
         <div class="overlay">
           <p class="description">Description of Julius Washington</p>
         </div>
-        <h3>Julius Washington</h3>
       </div>
+      <div class="CSuiteTitles">
+        <h3>Julius Washington</h3>
+        <h4>CTO</h4>
+      </div>
+    </div>
     </div>
   </section>  
   <footer>
