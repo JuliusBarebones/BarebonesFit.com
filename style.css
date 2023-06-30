@@ -54,21 +54,27 @@ section {
 }
 
 #logo {
-  height: 50px;
+  height: 40px; /* Adjust the height as desired */
   width: auto;
+  margin-right: auto;
 }
+
 
 #navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 65%;
+  margin-left: auto; /* Aligns the navbar to the right */
+  margin-right: auto; /* Aligns the navbar to the left */
   font-family: 'Barebones-Bold';
 }
 
 #navbar a {
   color: black;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 1.5vw; /* Adjust the font-size as needed */
+  margin: 0 20px; /* Adjust the margin as needed */
 }
 
 #navbar a:hover {
@@ -76,13 +82,16 @@ section {
 }
 
 #launch-btn {
-  background-color: transparent;
-  border: 2px solid #cf04fe;
-  border-radius: 60px;
-  padding: 10px 20px;
-  font-family: 'Barebones-Bold';
-  color: #cf04fe;
-}
+    background-color: #cf04fe;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px; /* Adjust the border-radius value to make the ellipse smaller */
+    font-family: 'Barebones-Bold';
+    font-size: 0.8vw; /* Adjust the font-size as needed */
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
 #home {
   display: flex;
@@ -93,35 +102,24 @@ section {
   width: 80%;
   margin-top: 50px; /* adjust this value to increase/decrease space */
 }
-
-.home-right {
+  
+.home-left, .home-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 40%;
 }
-
-.home-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 70%;
-}
-
-#home-logo {
-  width: 80%;
-  height: auto;
-}
+  
 
 .motto {
   font-family: 'Barebones-Bold';
-  font-size: 3vw; /* modified from em to vw so that the motto changes size with the screen size */
+  font-size: 3vw;
   text-align: left;
-  margin-top: 300px; /* adjust this value to move the motto up or down */
-  white-space: nowrap;
-  overflow: hidden;
+  margin-top: 200px; /* Adjust this value as needed */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
 }
 
 .blur-img {
@@ -135,11 +133,15 @@ section {
 
 .iphone-img {
   position: absolute;
-  top: 20%;
-  width: 25%; /* Adjust to the size you prefer */
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, -30%);
+  width: 35%; /* Adjust to the size you prefer */
   height: auto;
   object-fit: contain;
 }
+
+
 
 #community {
   display: flex;
@@ -331,8 +333,8 @@ footer {
 /* updated code */
 .story {
   position: relative;
-  width: 250px; /* adjust the size as needed */
-  height: 250px; /* adjust the size as needed */
+  width: 40%; /* Adjust the initial width as desired */
+  padding-bottom: 40%; /* Set the height based on the width to create a square shape */
   margin: 0.5%;
   display: flex;
   flex-direction: column;
@@ -343,8 +345,8 @@ footer {
 
 .story img {
   object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
@@ -463,8 +465,10 @@ footer {
   }
 
   .motto {
-    margin-top: 200px;
-    text-align: center;
+    font-size: 1.8em; /* adjust the size for smaller screens */
+    margin-top: 200px; /* adjust this value to move the motto up or down */
+    white-space: normal; /* allow line breaks */
+    text-overflow: clip; /* clip the text without ellipsis */
   }
 
   .blur-img {
@@ -514,9 +518,8 @@ footer {
   }
 
   .story {
-    width: 80%;
-    height: 200px;
-    margin: 20px 0;
+    width: 40%;
+    padding-bottom: 40%;
   }
 
   .story h3 {
